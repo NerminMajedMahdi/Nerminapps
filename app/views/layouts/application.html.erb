@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nerminapps</title>
+
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+
+  
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <a class="navbar-brand" href="#">Flowers | Nermin Market</a>
+        </div>
+
+
+	<p id="notice"><%= notice %></p>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+     <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="/" class="here">products</a>
+                <a href="/about.html" >About</a>   
+                <a href="/show.html" >contact</a> 
+                 </div>
+               </div>
+
+<h1>Best Roses For The Most Beautiful People </h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="columns">
+      <ul class="product">
+        <li class="header">Tulip flower</li>
+        <li class="data"><img class="img-responsive" src="/assets/twellp.jpg" alt="twellp1" /></li>
+        <li>50$</li>
+        <li>The tulip is found in Australia, the Netherlands. Its native habitat resembles the mouth of the fish in terms of cavity</li>
+        <li>Multi-colors</li>
+        <li class="action"><a href="/products/2">Show</a>  <a href="/products/2/edit">Edit</a>
+         <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/products/2">Destroy</a></a></li>
+      </ul>
+</div>
+
+    <div class="columns">
+      <ul class="product">
+        <li class="header">Daffodil Flower</li>
+        <li class="data"><img class="img-responsive" src="/assets/flower.jpg" alt="Classicbike" /></li>
+        <li>39$</li>
+        <li>The Daffodil of Jerusalem originates in its yellow color, which is derived from the golden sun</li>
+        <li>Yallow</li>
+        <li class="action"><a href="/products/3">Show</a>  <a href="/products/3/edit">Edit</a>
+         <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/products/3">Destroy</a></a></li>
+      </ul>
+</div>
+
+    <div class="columns">
+      <ul class="product">
+        <li class="header">Jasmine Flowers</li>
+        <li class="data"><img class="img-responsive" src="/assets/1ff.jpg" alt="Roadbike1" /></li>
+        <li>49$</li>
+        <li>The jasmine flower is home to ancient Egypt, used by ancient pharaohs to cleanse the wounds</li>
+        <li>Orange</li>
+        <li class="action"><a href="/products/1">Show</a>  <a href="/products/1/edit">Edit</a>
+         <a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/products/1">Destroy</a></a></li>
+      </ul>
+</div>
+
+  </div>
+</div>
+<%= @test_variable %>
+
+<div class="container-fluid">
+  <div class="row">
+    <% @products.each do |product| %>
+    <div class="columns">
+      <ul class="product">
+        <li class="header"><%= product.name %></li>
+        <li class="data"><%= image_tag(product.image_url, class: "img-responsive") %></li>
+        <li><%= product.price %></li>
+        <li><%= product.description %></li>
+        <li><%= product.color %></li>
+        <li class="action"><%= link_to 'Show', product %>  <%= link_to 'Edit', edit_product_path(product) %>
+         <%= link_to 'Destroy', product, method: :delete, data:{ confirm: 'Are you sure?' } %></a></li>
+      </ul>
+</div>
+    <% end %>
+  </div>
+</div>
+    <body>
+<br>
+
+<%= link_to 'New Product', new_product_path %>
+
+    <%= yield %>
+  </body>
+</html>
+
+
+ <!--Footer Section -->
+  <div class="footer-container">
+    <div class="container">
+      <h4 class="_14">Follow me on</h4>
+    <ul class="social-icons">
+        <li><a href="https://www.facebook.com/NerminMahdi20" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/Nermin%2520M.%2520Mahdi" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+    </ul>
+    <p> &copy; Web Development by Nermin M. Mahdi 2017</p>
+  </div>
+</div>
+
+  <!--End Footer Section -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

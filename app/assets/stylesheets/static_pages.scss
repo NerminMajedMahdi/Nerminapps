@@ -1,0 +1,198 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #00000;
+    background: #eeeeee;
+    padding:60px 0;
+    margin-bottom: 60px;
+    position: relative;
+  height: auto;
+  min-height: 100%;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+._12 {
+    font-size: 1.2em;
+}
+
+._14 {
+    color: #0000ff;
+    font-size: 1.4em;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+/*** Carousel ***/
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+
+    margin: 40px auto;
+    height: 50%;
+    width: 75%;
+}
+
+.carousel-caption{
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 24px;
+
+}
+
+/*** Navigation ***/
+
+.navbar-collapse ul{
+  padding-right: 40px;
+}
+
+.navbar-collapse ul li a{
+  text-transform: uppercase;
+} 
+
+.nav ul li a{
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+/*** Site Sections ***/
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.proj-title {
+  font-weight:100;
+}
+
+/**Footer **/
+
+.footer-container {
+    
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: #3a3737;
+}
+
+.footer-container p {
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+/*** social media ***/
+
+.footer-social-icons{
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.social-icon {
+    color: #fff;
+}
+
+ul.social-icons{
+    margin-top: 10px;
+}
+
+.social-icons li{
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+
+.social-icons a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-facebook{
+    padding:10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #3B5998;
+}
+
+.fa-facebook:hover{
+    background-color: #3d5b99;
+}
+
+.fa-twitter{
+    padding:10px 12px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #4099FF;
+}
+
+.fa-twitter:hover{
+    background-color: #00aced;
+}
+
+.fa-linkedin{
+    padding:10px 14px;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #007bb5;
+}
+
+.fa-linkedin:hover{
+    background-color: #0073a4;
+}
+
+.glyphicon:hover{
+  color: #0000EE;
+}
+
+.fa:hover{
+  color: #0000EE;
+}
+/**tooltip **/
+
+#scm, #spc{
+  color: #0000EE;
+}

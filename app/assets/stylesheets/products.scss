@@ -1,0 +1,275 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+h1{
+	padding-bottom: 20px;
+	text-align: center;
+	color: black;
+}
+
+.field {
+	color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+/* Style the list */
+.data {
+    list-style-type: none;
+    border: 1px solid black;
+    color: black;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.product:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Product header */
+.product .header {
+    background-color: #bcb1f7;
+    color: red;
+    font-size: 25px;
+}
+
+/* List items */
+.product li {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+/* Grey list item */
+.product .action .grey {
+    background-color: #bcb1f7;
+    font-size: 20px;
+    color: black;
+}
+
+/* The "Sign Up" button */
+.button {
+    background-color: #4CAF50;
+    border: black;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Change the width of the three columns to 100% 
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #00000;
+    background: #eeeeee;
+    padding:60px 0;
+    margin-bottom: 60px;
+    position: relative;
+  height: auto;
+  min-height: 100%;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p > a:hover{
+    color: #bcb1f7;
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+._12 {
+    font-size: 1.2em;
+}
+
+._14 {
+    color: #0000ff;
+    font-size: 1.4em;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+h3 {
+  text-align: center;
+}
+
+._14 {
+    color: #04447;
+    font-size: 1.4em;
+}
+
+
+/*** Carousel ***/
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+
+    margin: 40px auto;
+    height: 50%;
+    width: 75%;
+}
+
+
+
+/*** Navigation ***/
+
+.navbar-collapse ul{
+  padding-right: 40px;
+}
+
+.navbar-collapse ul li a{
+  text-transform: uppercase;
+} 
+
+.nav ul li a{
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+/*** Site Sections ***/
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.proj-title {
+  font-weight:100;
+}
+
+/**Footer **/
+
+.footer-container {
+    
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: #3a3737;
+}
+
+.footer-container p {
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+/*** social media ***/
+
+.footer-social-icons{
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.social-icon {
+    color: #fff;
+}
+
+ul.social-icons{
+    margin-top: 10px;
+}
+
+.social-icons li{
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+
+.social-icons a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-facebook{
+    padding:10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #3B5998;
+}
+
+.fa-facebook:hover{
+    background-color: #3d5b99;
+}
+
+.fa-twitter{
+    padding:10px 12px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #4099FF;
+}
+
+.fa-twitter:hover{
+    background-color: #00aced;
+}
+
+
+.glyphicon:hover{
+  color: #0000EE;
+}
+
+.fa:hover{
+  color: #0000EE;
+}
+/**tooltip **/
+
+#scm, #spc{
+  color: #0000EE;
+}
+
+
+.image-land{
+  justify-content: center;
+  alig: center;
+   display: block;
+    margin: 0 auto;
+}
